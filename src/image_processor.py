@@ -4,8 +4,8 @@ from typing import Final
 
 from PIL import Image
 
-class ImageProcessor:
 
+class ImageProcessor:
     output_path: Final[str] = "dataset"
     padding_color: Final[str] = (114, 114, 114)
 
@@ -13,7 +13,7 @@ class ImageProcessor:
         self._path = path
 
         if not os.path.exists(self.output_path):
-            os.mkdir(self.output_path)  
+            os.mkdir(self.output_path)
 
     @staticmethod
     def is_image(file: str) -> bool:
@@ -44,4 +44,3 @@ class ImageProcessor:
         image = Image.open(f"{self._path}/{file}")
         resized_image = self.resize_image(image, 640)
         self.save_image(resized_image, file)
-
