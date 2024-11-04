@@ -28,5 +28,5 @@ pre-commit install
 - [x] Resize image with a padding
 - [x] Type hints
 - [x] Lint & formatter
-- [ ] Docstrings
+- [x] Docstrings
 - [x] Pre-commit hooks
